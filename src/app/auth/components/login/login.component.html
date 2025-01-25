@@ -1,0 +1,37 @@
+<div class="w-full min-h-screen flex items-center justify-center">
+  <p-card class="w-full sm:w-96 mx-1">
+    <!-- <ng-template #header>
+      <img
+        alt="Card"
+        class="w-full"
+        src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+      />
+    </ng-template> -->
+    <h2 class="text-2xl font-bold">
+      <i class="pi pi-lock text-2xl"></i>
+      Login
+    </h2>
+    <h3 class="text-surface-500">Enter to your dashboard</h3>
+    <p-fluid class="w-full flex flex-col gap-5 my-4">
+      <input type="text" pInputText placeholder="Enter your email" />
+      <input type="text" pInputText placeholder="Enter your password" />
+
+      <p-button
+        label="Dont't have an account?"
+        [link]="true"
+        styleClass="text-surface-900"
+      />
+    </p-fluid>
+
+    <ng-template #footer>
+      <div class="flex gap-4 mt-1">
+        <p-button
+          label="LogIn"
+          class="w-full"
+          styleClass="w-full"
+          raised="true"
+        />
+      </div>
+    </ng-template>
+  </p-card>
+</div>
