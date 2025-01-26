@@ -1,0 +1,68 @@
+<p-card class="w">
+  <div class="w-full flex items-center justify-between">
+    <h2 class="text-2xl font-bold">
+      <i class="pi pi-lock text-2xl"></i>
+      Login
+    </h2>
+    <p-togglebutton
+      size="small"
+      formControlName="checked"
+      onLabel="Light"
+      offLabel="Dark"
+      onIcon="pi pi-sun"
+      offIcon="pi pi-moon"
+      (click)="toggleDarkMode()"
+    />
+  </div>
+  <h3 class="text-surface-500">Enter to your dashboard</h3>
+  <p-fluid class="w-full flex flex-col gap-4 my-4">
+    <div>
+      <label for="email" class="font-semibold">Email</label>
+      <input type="text" id="email" pInputText placeholder="Enter your email" />
+    </div>
+    <div>
+      <label for="password" class="font-semibold">Password</label>
+      <p-password
+        id="password"
+        [toggleMask]="true"
+        placeholder="Enter your password"
+        [feedback]="false"
+      />
+    </div>
+    <div class="flex items-center gap-2 ml-auto">
+      <label for="remember" class="text-sm">Remember credentials</label>
+      <p-checkbox
+        styleClass="m-auto"
+        inputId="remember"
+        name="pizza"
+        value=""
+      />
+    </div>
+    <div class="flex justify-between">
+      <p-button
+        label="forgot password?"
+        [link]="true"
+        size="small"
+        styleClass=" text-surface-600 dark:text-surface-300"
+      />
+      <p-button
+        routerLink="/auth/register"
+        label="Dont't have an account?"
+        [link]="true"
+        size="small"
+        styleClass=" text-surface-600 dark:text-surface-300"
+      />
+    </div>
+  </p-fluid>
+
+  <ng-template #footer>
+    <div class="flex gap-4 mt-1">
+      <p-button
+        label="LogIn"
+        class="w-full"
+        styleClass="w-full"
+        raised="true"
+      />
+    </div>
+  </ng-template>
+</p-card>

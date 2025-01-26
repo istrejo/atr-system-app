@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-register',
-  imports: [],
+  imports: [FormComponent],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss',
 })

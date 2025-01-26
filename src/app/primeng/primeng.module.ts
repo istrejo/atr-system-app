@@ -10,6 +10,9 @@ import { TextareaModule } from 'primeng/textarea';
 import { FluidModule } from 'primeng/fluid';
 import { MessageModule } from 'primeng/message';
 import { InputOtpModule } from 'primeng/inputotp';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+import { PasswordModule } from 'primeng/password';
+import { CheckboxModule } from 'primeng/checkbox';
 
 const components = [
   ButtonModule,
@@ -21,6 +24,9 @@ const components = [
   FluidModule,
   MessageModule,
   InputOtpModule,
+  ToggleButtonModule,
+  PasswordModule,
+  CheckboxModule,
 ];
 
 @NgModule({

@@ -8,11 +8,10 @@ export const routes: Routes = [
   },
   {
     path: 'auth/login',
-    loadComponent: () => import('./auth/components/login/login.component'),
+    loadComponent: () => import('./auth/pages/login/login.component'),
   },
   {
     path: 'auth/register',
-    loadComponent: () =>
-      import('./auth/components/register/register.component'),
+    loadComponent: () => import('./auth/pages/register/register.component'),
   },
 ];
